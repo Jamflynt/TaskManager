@@ -9,7 +9,7 @@ Add to To Do List - enter "ADD"
 Remove item from To Do List - enter "REMOVE"
 Return to the Present - "GERONIMO"`
 
-const tasks = [`Charge Palm Pilot`, `Master JScript for Netscape`];
+const tasks = [`Put new batteries in Walkman`, `Master JScript for Netscape`];
 let taskList="";
 let addTask;
 let numRemoved;
@@ -53,10 +53,7 @@ while (input !== "GERONIMO"){
                 taskList="";
             }
         }
-
-
     }
-
     input = prompt(menu).toUpperCase();
 }
 alert(`Enjoy the Present and your fancy iPhones`);
