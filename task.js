@@ -1,17 +1,27 @@
 console.log("Hello World!");
 // Task Manager Project
 
-let currentYear = 2021;
+const menu = `Welcome to 1996 this is your Palm Pilot Menu
 
-const hello = `Welcome! 
+Would you like to:
+Display To Do List - enter "TODO"
+Add to To Do List - enter "ADD"
+Remove item from To Do List - enter "REMOVE"
+Return to the Present - "GERONIMO"`
 
-Would you like go back to 1996?
-"YES" - Continue to Palm Pilot Menu
-"NO" - Stay in ${currentYear}`;
+let input = prompt(menu).toUpperCase();
 
-let input = prompt(hello).toUpperCase();
+while (input !== "GERONIMO"){
 
-while (input !== "NO"){
-    input = prompt(hello).toUpperCase();
+    if (input === "TODO"){
+        
+        
+
+
+
+
+    }
+
+    input = prompt(menu).toUpperCase();
 }
 alert(`Enjoy the Present`);
