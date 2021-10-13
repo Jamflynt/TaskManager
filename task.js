@@ -12,7 +12,8 @@ Return to the Present - "GERONIMO"`
 const tasks = [`Charge Palm Pilot`, `Master JScript for Netscape`];
 let taskList="";
 let addTask;
-
+let numRemoved;
+let removed; 
 
 
 let input = prompt(menu).toUpperCase();
@@ -36,6 +37,24 @@ while (input !== "GERONIMO"){
             }
         } alert(`"${addTask}" added and assigned Priority 1`);
         tasks.push(addTask);
+    } else if (input === "REMOVE"){
+        while(true) {
+            for (i=0; i<tasks.length; i++){
+                taskList =+ `${i+1}: ${tasks[i]}\n`;
+            } numRemoved = parseInt(prompt(`Please enter a To Do list item number to remove: \n${taskList}`));
+
+            if (numRemoved >= 0 && numRemoved < tasks.length){
+                removed = tasks.splice(numRemoved, 1);
+                alert(`"${removed[0]}" was removed from To Do list.`);
+                taskList = "";
+                break;
+            } else {
+                alert(`That was not a To Do list item number.`);
+                taskList="";
+            }
+        }
+
+
     }
 
     input = prompt(menu).toUpperCase();
