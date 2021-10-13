@@ -10,7 +10,7 @@ Remove item from To Do List - enter "REMOVE"
 Return to the Present - "GERONIMO"`
 
 const tasks = [`Charge Palm Pilot`, `Master JScript for Netscape`];
-let taskList;
+let taskList="";
 let addTask;
 
 
@@ -21,7 +21,7 @@ while (input !== "GERONIMO"){
 
     if (input === "TODO"){
         for (list of tasks){
-            taskList += `${list}`;
+            taskList += `${list}\n`;
         }
         alert(taskList);
 
