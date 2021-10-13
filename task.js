@@ -25,6 +25,15 @@ while (input !== "GERONIMO"){
         }
         alert(taskList);
 
+    } else if (input === "ADD"){
+        addTask = prompt(`Write down the To Do item (all tasks assigned Priority 1):`);
+        while(true) {
+            if (addTask === ""){
+                addTask = prompt(`Nothing was written, please write a new To Do item:`)
+            } else {
+                break;
+            }
+        } alert(`"${addTask}" added and assigned Priority 1`);
     }
 
     input = prompt(menu).toUpperCase();
