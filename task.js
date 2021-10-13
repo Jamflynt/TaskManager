@@ -40,7 +40,7 @@ while (input !== "GERONIMO"){
     } else if (input === "REMOVE"){
         while(true) {
             for (i=0; i<tasks.length; i++){
-                taskList =+ `${i+1}: ${tasks[i]}\n`;
+                taskList += `${i+1}: ${tasks[i]}\n`;
             } numRemoved = parseInt(prompt(`Please enter a To Do list item number to remove: \n${taskList}`)); 
 
             if (numRemoved >= 0 && numRemoved < tasks.length){
@@ -59,4 +59,4 @@ while (input !== "GERONIMO"){
 
     input = prompt(menu).toUpperCase();
 }
-alert(`Enjoy the Present`);
+alert(`Enjoy the Present and your fancy iPhones`);
