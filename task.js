@@ -9,12 +9,18 @@ Add to To Do List - enter "ADD"
 Remove item from To Do List - enter "REMOVE"
 Return to the Present - "GERONIMO"`
 
+const tasks = [`Charge Palm Pilot`, `Master JScript for Netscape`];
+let taskList;
+let addTask;
+
+
+
 let input = prompt(menu).toUpperCase();
 
 while (input !== "GERONIMO"){
 
     if (input === "TODO"){
-        
+
         
 
 
