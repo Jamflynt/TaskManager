@@ -41,7 +41,7 @@ while (input !== "GERONIMO"){
         while(true) {
             for (i=0; i<tasks.length; i++){
                 taskList =+ `${i+1}: ${tasks[i]}\n`;
-            } numRemoved = parseInt(prompt(`Please enter a To Do list item number to remove: \n${taskList}`));
+            } numRemoved = parseInt(prompt(`Please enter a To Do list item number to remove: \n${taskList}`)); 
 
             if (numRemoved >= 0 && numRemoved < tasks.length){
                 removed = tasks.splice(numRemoved, 1);
