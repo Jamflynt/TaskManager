@@ -20,11 +20,10 @@ let input = prompt(menu).toUpperCase();
 while (input !== "GERONIMO"){
 
     if (input === "TODO"){
-
-        
-
-
-
+        for (list of tasks){
+            taskList += `${list}`;
+        }
+        alert(taskList);
 
     }
 
