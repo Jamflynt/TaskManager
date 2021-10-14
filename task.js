@@ -1,7 +1,9 @@
 console.log("Hello World!");
 // Task Manager Project
 
-const menu = `Welcome to 1996 this is your Palm Pilot Menu
+const menu = `Welcome to 1996! 
+
+Palm Pilot To Do List
 
 Would you like to:
 Display To Do List - enter "TODO"
