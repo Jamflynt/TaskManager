@@ -69,6 +69,7 @@ html {
 button {
     background-color: #A19568;
     border: none;
+    font-family: 'VT323', monospace;
 }
 
 @media (max-width: 1150px) {
