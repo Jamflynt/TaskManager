@@ -15,7 +15,10 @@ let addTask;
 let numRemoved;
 let removed; 
 
+alert("Please click on To Do List");
 
+
+function run(){
 let input = prompt(menu).toUpperCase();
 
 while (input !== "GERONIMO"){
@@ -56,3 +59,4 @@ while (input !== "GERONIMO"){
     } input = prompt(menu).toUpperCase();
 }
 alert(`Enjoy the Present and your fancy iPhones`);
+};
