@@ -53,7 +53,6 @@ while (input !== "GERONIMO"){
                 taskList="";
             }
         }
-    }
-    input = prompt(menu).toUpperCase();
+    } input = prompt(menu).toUpperCase();
 }
 alert(`Enjoy the Present and your fancy iPhones`);

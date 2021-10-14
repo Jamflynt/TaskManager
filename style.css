@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+    background-color: #51514D;
+    color: #51514D;
+}
+
+.outside {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #A19568;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    border: 10px solid #51514D;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.icons {
+    color: #51514D;
+    padding: 20px 40px;
+    font-size: 25px;
+    justify-items: center;
+    text-align: center;
+}
+
+.icons h3 {
+    margin-top: 20px;
+    z-index: 3;
+}
+
+.icons i {
+    font-size: 50px;
+    color: #A19568;
+    z-index: 3;
+}
+
+.icons i::before {
+    background-color: #51514D;
+    border-radius: 50%;
+    padding: 15px;
+    z-index: 1;
+}
+
+@media (max-width: 1150px) {
+    .container {
+        width: 80vw;
+        height: auto;
+    }
+}
+@media (max-width: 850px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 730px) {
+    .outside {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .container {
+        width: 90vw;
+        height: 90vh;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    .containerGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        border: 5px solid #51514D;
+        padding: 40px 0px;
+        margin-top: 60px;
+    }
+    
+    .icons {
+        color: #51514D;
+        padding: 10px 0px;
+        font-size: 15px;
+        justify-items: center;
+        text-align: center;
+        margin: 10px 5px;
+    }
+    
+    .icons h3 {
+        margin-top: 20px;
+        z-index: 3;
+    }
+    
+    .icons i {
+        font-size: 30px;
+        color: #A19568;
+        z-index: 3;
+    }
+    
+    .icons i::before {
+        background-color: #51514D;
+        border-radius: 50%;
+        padding: 15px;
+        z-index: 1;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 812px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+}
